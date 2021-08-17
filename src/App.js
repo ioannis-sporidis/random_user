@@ -19,6 +19,7 @@ function App() {
   const getPerson = async () => {
     const response = await fetch(url);
     const data = await response.json();
+    console.log(data);
 
     const person = data.results[0];
     const { phone, email } = person;
@@ -28,6 +29,7 @@ function App() {
     const { age } = person.dob;
     const {
       street: { number, name },
+      country,
     } = person.location;
 
     const newPerson = {
@@ -36,7 +38,7 @@ function App() {
       email,
       password,
       age,
-      street: `${number} ${name}`,
+      street: `${number} ${name}, ${country}`,
       name: `${first} ${last}`,
     };
 
@@ -47,7 +49,11 @@ function App() {
   };
 
   const handleValue = e => {
-    console.log(e.target);
+    if (e.target.classList.contains('icon')) {
+      const newValue = e.target.dataset.label;
+      setTitle(newValue);
+      setValue(person[newValue]);
+    }
   };
 
   useEffect(() => {
