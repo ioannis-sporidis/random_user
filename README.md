@@ -1,6 +1,6 @@
 # Random User App
 
-https://ioannis-sporidis.github.io/cocktails_db/
+https://ioannis-sporidis.github.io/random_user/
 
 ## Dependencies
 
