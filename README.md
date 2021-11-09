@@ -1,6 +1,6 @@
-# Random User App
+# Random User Component
 
-https://ioannis-sporidis.github.io/random_user/
+Click [here](https://ioannis-sporidis.github.io/rc-random-user/) to check out the component.
 
 ## Dependencies
 
