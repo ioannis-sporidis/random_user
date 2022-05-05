@@ -1,6 +1,6 @@
 # Random User Component
 
-Click [here](https://ioannis-sporidis.github.io/rc-random-user/) to check out the component.
+Check out the component [here](https://the-fetaverse.github.io/rc-random-user/).
 
 ## Dependencies
 
